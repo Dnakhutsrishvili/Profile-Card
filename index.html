@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Profile card component</title>
+
+ 
+  <style>
+  @font-face {
+  font-family:"Kumbh Sans";
+  src: url(./fonts/Kumbh_Sans/KumbhSans-VariableFont_wght.ttf);
+}
+body{
+  margin: 0;
+  font-family:"Kumbh Sans" ;
+
+background: #19A1AE;
+border-radius: 0px;
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+
+
+}
+
+
+.img{
+background-image: url(./images/bg-pattern-top.svg);
+    width: 622px;
+height: 621px;
+position: fixed;
+
+transform: rotate(180deg);
+left: -316px;
+    top: -290px;
+z-index: -1;
+}
+
+
+.card{
+
+  height: 374px;
+width: 326px;
+
+border-radius: 15px;
+background: #FFFFFF;
+box-shadow: 0px 50px 100px -20px rgba(8, 70, 94, 0.504835);
+border-radius: 15px;
+margin-top: 147px;
+}
+.top-img{
+  height: 140px;
+width: 326px;
+border-radius: 15px 15px 0px 0px;
+
+
+}
+.victor{
+  border: 5px solid #FFFFFF;
+  border-radius: 50%;
+
+width: 96px;
+height: 96px;
+left: calc(50% - 96px/2);
+top: calc(50% - 96px/2 - 48px);
+}
+.name{
+
+ margin-top: 0;
+  font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 22px;
+text-align: center;
+height: 18px;
+
+color: #2E3349;
+}
+.age{
+  font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+text-align: center;
+
+color: #6B7082;
+}
+.location{
+  font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+text-align: center;
+margin: 0;
+color: #6B7082;
+}
+.line{
+margin: 0;
+width: 324px;
+
+top: 285px;
+border-radius: 0px;
+border: 0.5 solid #E8E9EC ;
+opacity: 0.5;
+margin-top: 28px;
+
+}
+.social{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+margin-top: 24px;
+}
+.amount{
+  font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 22px;
+text-align: center;
+margin: 0;
+color: #2E3349;
+}
+.type{
+  font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 12px;
+text-align: center;
+letter-spacing: 1.5px;
+margin: 0;
+color: #6B7082;
+}
+.social-second{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 9px;
+}
+.img-bottom{
+background-image: url(./images/bg-pattern-bottom.svg);
+    width: 622px;
+height: 621px;
+position: fixed;
+
+
+bottom: -267px;
+    left: 42px;
+z-index: -1;
+   
+}
+.victor-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -50px;
+}
+.victor{
+  margin-top: -1px;
+  margin-left: -1px;
+}
+@media only screen and (min-width: 600px){
+.card{
+  height: 374px;
+width: 350px;
+
+
+}
+.top-img{
+  height: 140px;
+width: 350px;
+
+
+}
+.line{
+  width: 348px;
+}
+.img-bottom{
+
+left: auto;
+  right: 0px; bottom: -200px;
+
+
+}
+
+}
+  </style>
+</head>
+<body>
+  
+    <div class="img">
+  
+    </div>
+    <div class="card">
+      <img class="top-img" src="./images/bg-pattern-card.svg" alt="back"/>
+      <div class="victor-container">
+<img class="victor" src="./images/image-victor.jpg" alt="victor"/>
+</div>
+<p class="name">Victor Crest <span class="age">26</span></p>
+<p class="location">London</p>
+<hr class="line"/>
+<div class="social">
+  <div class="social-second" >
+    <p class="amount">80K</p>
+    <p class="type">Followers</p>
+  </div>
+  <div class="social-second">
+    <p class="amount">803K</p>
+    <p class="type"> Likes</p>
+  </div>
+  <div class="social-second">
+    <p class="amount">1.4K</p>
+    <p class="type">Photos</p>
+  </div>
+
+</div>
+    </div>
+  
+  <div class="img-bottom"></div>
+
+</body>
+</html>
